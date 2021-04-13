@@ -14,9 +14,13 @@ body {
 }
 
 #header {
-    height: 600px;
+    height: 100vh;
     background-image: url(../images/mustafa-matkawala-6oFE6fukDEQ-unsplash.jpg);
     background-size: cover;
     max-width: 100%;
+<<<<<<< HEAD
     /* To fit background image into div */
 }
+=======
+}
+>>>>>>> e61ae5dd3aa28e3935b29cbe7323ce10f21c6c30
