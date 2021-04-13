@@ -9,9 +9,8 @@ body {
 }
 
 #header {
-    height: 600px;
+    height: 100vh;
     background-image: url(../images/mustafa-matkawala-6oFE6fukDEQ-unsplash.jpg);
     background-size: cover;
     max-width: 100%;
-    /* To fit background image into div */
 }
