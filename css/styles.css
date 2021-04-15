@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: #aeeae3;
+    background-color: white;
 }
 
 #header {
@@ -17,5 +17,20 @@ body {
     background-image: url(../images/mustafa-matkawala-6oFE6fukDEQ-unsplash.jpg);
     background-size: cover;
     max-width: 100%;
-    /* To fit background image into div */
+}
+
+#indexCursive{
+    font-family: 'Lily Script One', cursive;
+    font-size: 300px;
+    color: white;
+}
+
+#indexHeader{
+    height: 100vh;
+    background-image: url(../images/leather-backpacks-main-1505487602.jpg);
+    background-size: cover;
+    max-width: 100%;
+}
+#indexHeaderText{
+    font-size: 30px;
 }
