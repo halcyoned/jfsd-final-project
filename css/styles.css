@@ -19,18 +19,27 @@ body {
     max-width: 100%;
 }
 
-#indexCursive{
-    font-family: 'Lily Script One', cursive;
-    font-size: 300px;
-    color: white;
+#indexTitle{
+    font-size: 50px;
+    text-align: center;
 }
 
 #indexHeader{
-    height: 100vh;
-    background-image: url(../images/leather-backpacks-main-1505487602.jpg);
-    background-size: cover;
-    max-width: 100%;
+    position: relative;
+    text-align: center;
 }
 #indexHeaderText{
-    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 150px;
+    font-family: 'Lily Script One', cursive;
+    color: brown;
+}
+
+@media screen and (max-width: 600px) {
+    #indexHeaderText {
+      display: none;
+    }
 }
