@@ -1,0 +1,21 @@
+#cursive {
+    font-family: 'Lily Script One', cursive;
+    font-size: 10rem;
+    color: #9c6644;
+}
+
+#logo {
+    font-family: 'Lily Script One', cursive;
+}
+
+body {
+    background-color: #aeeae3;
+}
+
+#header {
+    height: 600px;
+    background-image: url(../images/mustafa-matkawala-6oFE6fukDEQ-unsplash.jpg);
+    background-size: cover;
+    max-width: 100%;
+    /* To fit background image into div */
+}
