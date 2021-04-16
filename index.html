@@ -12,23 +12,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <style>
-        .carousel-inner {
+        .carousel img {
             height: 90vh;
-            /* width: 100vw; */
-        }
-
-        .carousel-item,
-        img {
-            height: 100%;
-            width: 100%;
             object-fit: cover;
+            opacity: 0.8;
         }
     </style>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-        <h1 id="logo">LLLC</h1>
+        <h1 id="logo" class="my-0 mr-3">LLLC</h1>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -37,10 +31,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#"> Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="about.html">About Us</a>
+                    <a class="nav-link" href="#">About Us</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="products.html">Product List</a>
@@ -52,10 +46,10 @@
                     <a class="nav-link" href="login.html">Login Page</a>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
+            <!-- <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
-            </form>
+            </form> -->
         </div>
     </nav>
 
@@ -98,6 +92,70 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
+        </div>
+    </div>
+
+    <div class="container mb-3">
+        <div class="featured-header mt-5 mb-3 text-center">
+            <h2 class="display-4">Explore the latest</h2>
+        </div>
+        <div class="featured-text mx-5">
+            <p class="lead text-center">Get outside and gear up for the season. Whether you're
+                planning a family camping
+                trip, hitting the books or making the daily commute to work, we've got you covered with everything
+                you'll need for good times and
+                adventures ahead.
+            </p>
+        </div>
+        <div class="featured-products card-deck mt-5">
+            <div class="card border-0">
+                <img src="images/featured-bag1.jpg" class="card-img-top" alt="featured bag 1">
+                <div class="card-body">
+                    <a href="products.html" class="text-dark text-decoration-none">
+                        <h5 class="card-title font-weight-light text-center">Totes</h5>
+                    </a>
+                </div>
+            </div>
+            <div class="card border-0">
+                <img src="images/featured-bag2.jpg" class="card-img-top" alt="featured bag 2">
+                <div class="card-body">
+                    <a href="products.html" class="text-dark text-decoration-none">
+                        <h5 class="card-title font-weight-light text-center">Duffels</h5>
+                    </a>
+                </div>
+            </div>
+            <div class="card border-0">
+                <img src="images/featured-bag3.jpg" class="card-img-top" alt="featured bag 3">
+                <div class="card-body">
+                    <a href="products.html" class="text-dark text-decoration-none">
+                        <h5 class="card-title font-weight-light text-center">Backpacks</h5>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="connect text-white bg-dark pb-3">
+        <div class="connect-header pt-3 mb-3 text-center">
+            <h2 class="display-4">Connect with us</h2>
+        </div>
+        <div class="connect-text text-center">
+            <p>Be the first to hear about new products and community events!</p>
+        </div>
+        <div class="row mx-auto justify-content-center">
+            <div class="col-7 pr-2">
+                <input type="email" class="form-control mb-2 mr-2" id="inlineFormInputEmail"
+                    placeholder="Email address">
+            </div>
+            <button type="submit" class="btn btn-danger ml-0 mb-2">Sign Up</button>
+        </div>
+    </div>
+
+    <div class="container-fluid px-0">
+        <div class="navbar navbar-expand-lg navbar-light bg-light px-0">
+            <div class="container-fluid">
+                <p class="text-muted pull-left my-0 py-1">&copy; 2021 LLLC&trade; | Terms and Conditions</p>
+            </div>
         </div>
     </div>
 
