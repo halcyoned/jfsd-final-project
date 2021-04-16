@@ -19,27 +19,36 @@ body {
     max-width: 100%;
 }
 
-#indexTitle{
+#productTitle{
     font-size: 50px;
     text-align: center;
 }
 
-#indexHeader{
+#productHeader{
     position: relative;
     text-align: center;
+    height: 75vh;
 }
-#indexHeaderText{
+
+#productHeader img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.4;
+}
+
+#productHeaderText h1{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 150px;
+    font-size: 7.5rem;
     font-family: 'Lily Script One', cursive;
-    color: brown;
+    color: #9d0208;
 }
 
 @media screen and (max-width: 600px) {
-    #indexHeaderText {
-      display: none;
+    #productHeaderText h1 {
+        font-size: 5.5rem;
     }
 }
