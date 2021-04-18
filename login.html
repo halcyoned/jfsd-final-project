@@ -17,6 +17,58 @@
 
 
 <body>
+    <!--Facebook Login JavaScript SDK (cut-and-paste, not working now) -->
+    <!-- <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v10.0" nonce="CjtGR6BH"></script>
+
+        <script>
+
+            function statusChangeCallback(response) {  // Called with the results from FB.getLoginStatus().
+              console.log('statusChangeCallback');
+              console.log(response);                   // The current login status of the person.
+              if (response.status === 'connected') {   // Logged into your webpage and Facebook.
+                testAPI();  
+              } else {                                 // Not logged into your webpage or we are unable to tell.
+                document.getElementById('status').innerHTML = 'Please log ' +
+                  'into this webpage.';
+              }
+            }
+          
+          
+            function checkLoginState() {               // Called when a person is finished with the Login Button.
+              FB.getLoginStatus(function(response) {   // See the onlogin handler
+                statusChangeCallback(response);
+              });
+            }
+          
+          
+            window.fbAsyncInit = function() {
+              FB.init({
+                appId      : '{app-id}',
+                cookie     : true,                     // Enable cookies to allow the server to access the session.
+                xfbml      : true,                     // Parse social plugins on this webpage.
+                version    : '{api-version}'           // Use this Graph API version for this call.
+              });
+          
+          
+              FB.getLoginStatus(function(response) {   // Called after the JS SDK has been initialized.
+                statusChangeCallback(response);        // Returns the login status.
+              });
+            };
+           
+            function testAPI() {                      // Testing Graph API after login.  See statusChangeCallback() for when this call is made.
+              console.log('Welcome!  Fetching your information.... ');
+              FB.api('/me', function(response) {
+                console.log('Successful login for: ' + response.name);
+                document.getElementById('status').innerHTML =
+                  'Thanks for logging in, ' + response.name + '!';
+              });
+            }
+          
+          </script> -->
+    <!--Eng of Facebook Login JavaScript SDK-->          
+
+
     <!--the nagivation bar at the top of page-->
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
         <h1 id="logo">LLLC</h1>
@@ -30,8 +82,8 @@
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">Home</a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">About Us <span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="products.html">Product List</a>
@@ -39,8 +91,8 @@
                 <li class="nav-item">
                     <a class="nav-link" href="item_form">Form Page</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="login.html">Login Page</a>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Login Page</a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
@@ -53,7 +105,7 @@
 
     <!--This is the login form. Reference to lazada.com's login form-->
     <!--Top section of login page-->
-    <br></br>
+    <br>
     <div class="container">
         <div class="container">
             <h4>Welcome to LLLC.</h4>
@@ -68,19 +120,22 @@
                 <div class="col-md-6">
                     <form action="login_submitted.html" method="GET">    
                         <div>
-                            <label for="phone_email">Phone number or email*</label> 
+                            <label for="email">Your email address*</label> 
                         </div>
                         <div>
-                            <input id="phone_email" name="phone_email" type="text" background-color=none required>
+                            <input id="email" name="email" type="email" required>
                         </div>
-                        <br></br>
+                        <br>
                         <div>
                             <label for="password">Password*</label>
                         </div>
                         <div>
-                            <input id="password" name="password" type="password" min="8" labe="min 8 characters" required>
+                            <input id="password" name="password" type="password" min="8" labe="min 8 characters" aried-describedby="passwordHelpBlock" required>
                         </div>
-                        <br></br>
+                        <div id="passwordHelpBlock" class="form-text">
+                            Your password must be more than 8 characters long, contain letters and numbers, and must not contain spaces or emoji.
+                          </div>
+                        <br>
                         <input type="submit">
                     </form>
                 </div>
@@ -88,6 +143,16 @@
                     <h6>New member?</h6>
                     <a href="#">Register here.</a> <!-- to link to registration form--> 
                 </div>
+                <br>
+                <!-- The JS SDK Login Button (cut-and-paste)-->
+                <!-- <div class="fb-login-button" data-width="" data-size="medium" data-button-type="login_with" data-layout="rounded" data-auto-logout-link="false" data-use-continue-as="true">
+                </div>-->
+                <!-- or-->
+                <!--<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+                </fb:login-button>
+
+                <div id="status">
+                </div> -->
             </div>
       
         </div>
