@@ -36,6 +36,18 @@ body {
     object-fit: cover;
     opacity: 0.4;
 }
+/*#indexCursive{
+    font-family: 'Lily Script One', cursive;
+    font-size: 300px;
+    color:brown;
+}
+
+#indexHeader{
+    height: 100vh;
+    background-image: url(../images/tim-gouw-3qMfzgNcCm4-unsplash.jpg);
+    background-size: cover;
+    max-width: 100%;
+}*/
 
 #productHeaderText h1{
     position: absolute;
@@ -46,6 +58,18 @@ body {
     font-family: 'Lily Script One', cursive;
     color: #9d0208;
 }
+
+.text-overlay {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+}
+
+.wrapper .carousel {
+    z-index: 0;
+}
+
 
 @media screen and (max-width: 600px) {
     #productHeaderText h1 {
