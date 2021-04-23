@@ -14,12 +14,66 @@
     <!--local CSS-->
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    <br></br>
-    <h4>Thank you for your submission.</h4>
-    <br></br>
-    <a href="about.html">Home</a>
-    
+
+  <!--the nagivation bar at the top of page-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+    <h1 id="logo">LLLC</h1>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="products.html">Product List</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="item_form">Form Page</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="login.html">Login Page<span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+    </nav>    
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div>
+                <h4>Thank you for your submission.</h4>
+            </div>
+            <br>
+            <br>
+
+            <!--force next column to break to new line by making width = 100%-->
+            <div class="row justify-content-center w-100"> 
+                <a href="products.html">Home</a>
+            </div>            
+        </div>    
+    </div>
+
+     <!--footer-->
+     <div class="container-fluid mt-5 px-0">
+        <div class="navbar navbar-expand-lg navbar-light bg-light px-0">
+            <div class="container-fluid">
+                <p class="text-muted pull-left my-0 py-1">&copy; 2021 LLLC&trade; | Terms and Conditions</p>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 
