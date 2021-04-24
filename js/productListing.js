@@ -6,16 +6,17 @@ function loadData() {
     //name: Cat Tee Black T-Shirt, description: 4MSL, imageURL:xxx
     //style : Cat, price : 
     
-    productsControl.addItem("Cat Tee Black T-Shirt", "4 MSL", "http://www.jennybeaumont.com/wp-content/uploads/2015/03/placeholder.gif", "Cat", 20);
+    productsControl.addItem("Men's Backpack", "Lorem ipsum dolor sit, amet consectetur adipisicing elit.", "images/bag1.jpg", "69.90", 2);
 
-    productsControl.addItem("Dog Tee Black T-Shirt", "5 MSL", "http://www.jennybeaumont.com/wp-content/uploads/2015/03/placeholder.gif", "Dog", 10);
+    productsControl.addItem("Ladies' Backpack", "Lorem ipsum dolor sit, amet consectetur adipisicing elit.", "images/bag2.jpg", "59.90", 5);
 
-    productsControl.addItem("Duck Tee Black T-Shirt", "6 MSL", "http://www.jennybeaumont.com/wp-content/uploads/2015/03/placeholder.gif", "Duck", 15);
+    productsControl.addItem("Children's Backpack", "Lorem ipsum dolor sit, amet consectetur adipisicing elit.", "images/bag3.jpg", "25.90", 8);
 
-    productsControl.addItem("Hamster Tee Black T-Shirt", "7 MSL", "http://www.jennybeaumont.com/wp-content/uploads/2015/03/placeholder.gif", "Hamster", 20);
+    productsControl.addItem("Ladies' Backpack", "Lorem ipsum dolor sit, amet consectetur adipisicing elit.", "images/bag2.jpg", "59.90", 5);
 
-    productsControl.addItem("Sheep Tee Black T-Shirt", "8 MSL", "http://www.jennybeaumont.com/wp-content/uploads/2015/03/placeholder.gif", "Sheep", 30);
-
+    productsControl.addItem("Ladies' Backpack", "Lorem ipsum dolor sit, amet consectetur adipisicing elit.", "images/bag2.jpg", "59.90", 5);
+    
     productsControl.displayItem();
 }
+
 loadData();

@@ -1,43 +1,31 @@
 //Doing a Product web app, in product page to display the name, description, imageURL, style, price ....
 
-const createHTMLList = (name, description, imageURL) =>
-`
-<div class="col-lg-4">
-        <div class="card" style="width: 18rem;">
-            <img src=${imageURL} class="card-img-top"
-                alt="image">
+const createHTMLList = (name, description, imageURL, price, quantity) => 
+    `<div class="card-deck mb-5 m">
+        <div class="mx-5 card" style="width: 18rem;">
+            <img src="${imageURL}" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">${name}</h5>
                 <p class="card-text">${description}</p>
-                <a href="#" class="btn btn-primary">More</a>
+                
+                <p>$${price}</p><p class="badge badge-warning">${quantity} pcs left!</p> 
+                
+                
+                
+                
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Colour</button>
+            
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Black</a>
+                        <a class="dropdown-item" href="#">Blue</a>
+                        <a class="dropdown-item" href="#">Red</a>
+                    </div>
+                </div>
             </div>
         </div>
-      </div>
-`;
+    </div>`;
 
-<div class="card-deck">
-    <div class="card" style="width: 18rem;">
-        <img src="images/bag1.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Men's backpack</h5>
-            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            
-            <p>$69.50 <span class="badge badge-warning">2 pcs left!</span></p>
-            
-            <p class="badge badge-warning">2 pcs left!</p>
-
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Colour</button>
-        
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">Black</a>
-                    <a class="dropdown-item" href="#">Blue</a>
-                    <a class="dropdown-item" href="#">Red</a>
-                </div>
-            </div>>
-        </div>
-    </div>
-</div>
 
 
 class ProductsController {
@@ -47,13 +35,13 @@ class ProductsController {
 
 
     //method to add the items into the array
-    addItem(name, description, imageURL, style, price) {
+    addItem(name, description, imageURL, price, quantity) {
         const itemObj = {
             oName: name,
             oDescription: description,
             oimageURL: imageURL,
-            oStyle: style,
-            oPrice: price
+            oPrice: price,
+            oQuantity: quantity
         };
 
         this._items.push(itemObj);
@@ -67,7 +55,7 @@ class ProductsController {
 
             const item = this._items[i];    //this is to assign the individual items to the variable
 
-            const productHTML = createHTMLList(item.oName, item.oDescription, item.oimageURL);
+            const productHTML = createHTMLList(item.oName, item.oDescription, item.oimageURL, item.oPrice, item.oQuantity);
 
             productHTMLList.push(productHTML);
         }
