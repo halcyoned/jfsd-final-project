@@ -41,8 +41,8 @@ class ProductsController {
             oPrice: price,
             oQuantity: quantity
         };
-
-        this._items.push(itemObj);
+        
+      this._items.push(itemObj);
     }
 
     displayItem() {
