@@ -22,8 +22,9 @@ const createHTMLList = (name, description, imageURL, price, quantity) =>
                 </div>
             </div>
         </div>
-    </div>
-`;
+    </div>`;
+
+
 
 class ProductsController {
     constructor() {
