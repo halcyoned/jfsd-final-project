@@ -22,9 +22,8 @@ const createHTMLList = (name, description, imageURL, price, quantity) =>
                 </div>
             </div>
         </div>
-    </div>`;
-
-
+    </div>
+`;
 
 class ProductsController {
     constructor() {
@@ -41,8 +40,8 @@ class ProductsController {
             oPrice: price,
             oQuantity: quantity
         };
-
-        this._items.push(itemObj);
+        
+      this._items.push(itemObj);
     }
 
     displayItem() {
