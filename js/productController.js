@@ -10,9 +10,6 @@ const createHTMLList = (name, description, imageURL, price, quantity) =>
                 
                 <p>$${price}</p><p class="badge badge-warning">${quantity} pcs left!</p> 
                 
-                
-                
-                
                 <div class="dropdown">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Colour</button>
             
@@ -43,8 +40,8 @@ class ProductsController {
             oPrice: price,
             oQuantity: quantity
         };
-
-        this._items.push(itemObj);
+        
+      this._items.push(itemObj);
     }
 
     displayItem() {
