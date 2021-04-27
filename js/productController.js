@@ -1,17 +1,14 @@
 //Doing a Product web app, in product page to display the name, description, imageURL, style, price ....
 
 const createHTMLList = (index, code, name, colorArray, price, description, image) =>
-    `<div class="card-deck mb-5 m">
-        <div class="mx-5 card" style="width: 18rem;">
-            <img src="${image}" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">${name}</h5>
-                <p class="card-text"></p>
-                
-                <p>$${price}</p>
-
-                <a id="${index}" href="#" class="btn btn-primary" data-toggle="modal" data-target="#productModal">More</a>
-            </div>
+    `<div class="cards" style="width:18rem;">
+        <img src="${image}" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+            <h5 class="card-title">${name}</h5>
+            <p class="card-text"></p>
+            <p>${price}</p>
+            <a id="${index}" href="#" class="btn btn-primary" data-toggle="modal" data-target="#productModal">More</a>
+                      
         </div>
     </div>`;
 
