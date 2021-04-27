@@ -6,7 +6,7 @@ const createHTMLList = (index, code, name, colorArray, price, description, image
             <img src="${image}" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">${name}</h5>
-                <p class="card-text">${description}</p>
+                <p class="card-text"></p>
                 
                 <p>$${price}</p>
 
