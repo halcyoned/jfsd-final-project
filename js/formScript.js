@@ -15,7 +15,32 @@ function submitForm() {
     var itemName = document.querySelector("#item-name").value;
     var itemPrice = document.querySelector("#item-price").value;
     var itemDescript = document.querySelector("#item-description").value;
-    // var itemImage = document.querySelector("#").value;                              //image??
+    var itemImage = "";                              //image??
+
+    var colorArray = [];
+    if (document.querySelector("#checkBlack").checked == true) {
+        colorArray.push(document.querySelector("#checkBlack").value);
+    }
+
+    if (document.querySelector("#checkBlue").checked == true) {
+        colorArray.push(document.querySelector("#checkBlue").value);
+    }
+
+    if (document.querySelector("#checkBrown").checked == true) {
+        colorArray.push(document.querySelector("#checkBlue").value);
+    }
+
+    if (document.querySelector("#checkPink").checked == true) {
+        colorArray.push(document.querySelector("#checkPink").value);
+    }
+
+    if (document.querySelector("#checkRed").checked == true) {
+        colorArray.push(document.querySelector("#checkRed").value);
+    }
+
+    if (document.querySelector("#checkWhite").checked == true) {
+        colorArray.push(document.querySelector("#checkWhite").value);
+    }
 
     var checkboxArray = [];
     checkboxArray.push(document.querySelector("#checkBlack").checked);
@@ -63,23 +88,19 @@ function submitForm() {
     }
 
     if (foundColor && foundCode && foundName && foundDescript) {
-        addToList(itemCode, itemName, checkboxArray, itemPrice, itemDescript);
+        addToList(itemCode, itemName, colorArray, itemPrice, itemDescript, itemImage);
         document.querySelector("#item_form").reset();
     }
 }
 
-function addToList(itemCode, itemName, checkboxArray, itemPrice, itemDescript) {
+function addToList(itemCode, itemName, colorArray, itemPrice, itemDescript, itemImage) {
     const item = {
         iCode: itemCode,
         iName: itemName,
-        black: checkboxArray[0],
-        blue: checkboxArray[1],
-        brown: checkboxArray[2],
-        pink: checkboxArray[3],
-        red: checkboxArray[4],
-        white: checkboxArray[5],
+        iColorArray: colorArray,
         iPrice: itemPrice,
-        iDescript: itemDescript
+        iDescript: itemDescript,
+        iItemImage: itemImage
     }
     formList.push(item);
     listForm();

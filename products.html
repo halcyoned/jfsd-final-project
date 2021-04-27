@@ -144,6 +144,38 @@
 
     </div>
 
+    <!-- Modal -->
+    <div class="modal fade" id="productModal" tabindex="-1" role="dialog" aria-labelledby="productModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 id="modalName">Cat Tee Black T-Shirt</h5>
+                    <span id="modalCode">00000</span>
+
+                </div>
+                <div class="modal-body">
+                    <div class="text-center">
+                        <img id="modalImg" src="" width="80%">
+                    </div>
+                    <hr>
+                    <p class="lead" id="modalDescription"></p>
+                    <p id="modalPrice"></p>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Colour
+                        </button>
+                        <div id="colorDropdown" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-primary" data-dismiss="modal">Close</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!--footer-->
     <div class="container-fluid mt-5 px-0">
         <div class="navbar navbar-expand-lg navbar-light bg-light px-0">
@@ -160,8 +192,8 @@
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
 
-        <script src="js/productController.js"></script>
-        <script src="js/productListing.js"></script>
+    <script src="js/productController.js"></script>
+    <script src="js/productListing.js"></script>
 </body>
 
 </html>
