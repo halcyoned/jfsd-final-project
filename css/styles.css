@@ -62,8 +62,15 @@ body {
 .text-overlay {
     position: absolute;
     width: 100%;
-    text-align: center;
+    /* text-align: center; */
+    align-self: center;
     z-index: 2;
+}
+
+.text-overlay h1 {
+    color: white;
+    font-size: 180px;
+    font-family: 'Lily Script One', cursive;
 }
 
 .wrapper .carousel {
