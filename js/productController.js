@@ -1,7 +1,7 @@
 //Doing a Product web app, in product page to display the name, description, imageURL, style, price ....
 
 const createHTMLList = (index, code, name, colorArray, price, description, image) =>
-    `<div class="cards" style="width:18rem;">
+    `<div class="card" style="width:18rem">
         <img src="${image}" class="card-img-top" alt="...">
         <div class="card-body text-center">
             <h5 class="card-title">${name}</h5>
@@ -61,7 +61,11 @@ class ProductsController {
 
             productHTMLList.push(productHTML);
         }
-
+        //add empty child div to ensure cards aligns to left side
+        for (i = 0; i < 3 - (this._items.length % 3); i++) {
+            productHTMLList.push('<div style="width:18rem">\n</div>');
+        }
+        
         //join all the elements/items in my productHTMLList array into one string, and seperate by a break
         const pHTML = productHTMLList.join('\n');
         document.querySelector('#row').innerHTML = pHTML;
