@@ -10,11 +10,12 @@
 
 body {
     background-color: white;
+    
 }
 
 #header {
     height: 600px;
-    background-image: url(../images/mustafa-matkawala-6oFE6fukDEQ-unsplash.jpg);
+    background-image: url(../images/fashion_runway_background.jpg);
     background-size: cover;
     max-width: 100%;
 }
@@ -25,7 +26,8 @@ body {
 }
 
 #productHeader{
-    position: relative;
+    margin: auto;
+    position: center;
     text-align: center;
     height: 75vh;
 }
@@ -73,6 +75,6 @@ body {
 
 @media screen and (max-width: 600px) {
     #productHeaderText h1 {
-        font-size: 5.5rem;
+        font-size: 4rem;
     }
 }

@@ -5,17 +5,17 @@ function loadData() {
     //add items to the ProductsController Class - items currently are hard coded into the class
     //name: Cat Tee Black T-Shirt, description: 4MSL, imageURL:xxx
     //style : Cat, price : 
-    
-    productsControl.addItem("Men's Backpack", "Lorem ipsum dolor sit, amet consectetur adipisicing elit.", "images/bag1.jpg", "69.90", 2);
 
-    productsControl.addItem("Ladies' Backpack", "Lorem ipsum dolor sit, amet consectetur adipisicing elit.", "images/bag2.jpg", "59.90", 5);
+    productsControl.addItem("31263", "Men's Backpack", ["black", "red", "blue", "white"], "$69.90", "Lorem ipsum dolor sit, amet consectetur adipisicing elit.", "images/bag1.jpg");
 
-    productsControl.addItem("Children's Backpack", "Lorem ipsum dolor sit, amet consectetur adipisicing elit.", "images/bag3.jpg", "25.90", 8);
+    productsControl.addItem("12312", "Ladies' Backpack", ["black", "white", "pink"], "$59.90", "Lorem ipsum dolor sit, amet consectetur adipisicing elit.", "images/bag2.jpg");
 
-    productsControl.addItem("Ladies' Backpack", "Lorem ipsum dolor sit, amet consectetur adipisicing elit.", "images/bag2.jpg", "59.90", 5);
+    productsControl.addItem("54567", "Children's Backpack", ["black", "pink"], "$25.90", "Lorem ipsum dolor sit, amet consectetur adipisicing elit.", "images/bag3.jpg");
 
-    productsControl.addItem("Ladies' Backpack", "Lorem ipsum dolor sit, amet consectetur adipisicing elit.", "images/bag2.jpg", "59.90", 5);
-    
+    productsControl.addItem("21314", "Ladies' Backpack", ["black", "blue", "brown", "white"], "$59.90", "Lorem ipsum dolor sit, amet consectetur adipisicing elit.", "images/bag2.jpg");
+
+    productsControl.addItem("65743", "Ladies' Backpack", ["black"], "$59.90", "Lorem ipsum dolor sit, amet consectetur adipisicing elit.", "images/bag2.jpg");
+
     productsControl.displayItem();
 }
 

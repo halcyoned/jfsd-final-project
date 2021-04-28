@@ -14,6 +14,18 @@
         section {
             background-color: rgb(240, 240, 240);
         }
+
+        @media (max-width: 576px) {
+            #formContainer {
+                width: 90%;
+            }
+        }
+
+        @media (min-width: 576px) {
+            #formContainer {
+                width: 75%;
+            }
+        }
     </style>
 </head>
 
@@ -50,7 +62,7 @@
         </div>
     </nav>
 
-    <section class="container mb-4 w-75 border border-light rounded-lg">
+    <section class="container mb-4 border border-light rounded-lg" id="formContainer">
         <h3 class="pt-5 mb-4 text-center font-weight-normal">Enter Product Details</h3>
         <div class="row d-flex justify-content-center">
             <div class="col-md-9">
@@ -65,41 +77,83 @@
                         <input type="text" class="form-control" id="item-name" placeholder="Enter item name (optional)">
                         <small id="itemNameErrorMsg" class="form-text text-danger"></small>
                     </div>
-                    <span class="title">Enter item colour and quantity*:</span><br>
-                    <span id="checkboxErrorMsg"></span>
-                    <div class="form-checkbox row">
-                        <div class="col">
-                            <div class="form-check my-2">
-                                <input class="form-check-input" type="checkbox" value="" id="checkBlack">
+                    <span class="title">Select item colour and quantity*</span><br>
+                    <small id="checkboxErrorMsg" class="form-text text-danger"></small>
+                    <div class="form-checkbox row mt-2">
+                        <div class="col-sm">
+                            <div class="form-check">
+                                <input class=" form-check-input" type="checkbox" value="black" id="checkBlack">
                                 <label class="form-check-label" for="checkBlack">Black</label>
-                                <input type="number" id="checkBlackQty"><br>
+                                <div class="form-group row mb-2">
+                                    <label for="qtyBlack"
+                                        class="col-3 col-form-label col-form-label-sm text-muted">Quantity:</label>
+                                    <div class="col-4">
+                                        <input type="number" class="form-control form-control-sm qty-input"
+                                            id="qtyBlack" min="1" disabled>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="form-check my-2">
-                                <input class="form-check-input" type="checkbox" value="" id="checkRed">
-                                <label class="form-check-label" for="checkRed">Red</label>
-                                <input type="number" id="checkRedQty"><br>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="blue" id="checkBlue">
+                                <label class="form-check-label" for="checkBlue">Blue</label>
+                                <div class="form-group row">
+                                    <label for="qtyBlue"
+                                        class="col-3 col-form-label col-form-label-sm text-muted">Quantity:</label>
+                                    <div class="col-4">
+                                        <input type="number" class="form-control form-control-sm qty-input" id="qtyBlue"
+                                            min="1" disabled>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="form-check my-2">
-                                <input class="form-check-input" type="checkbox" value="" id="checkWhite">
-                                <label class="form-check-label" for="checkWhite">White</label>
-                                <input type="number" id="checkWhiteQty"><br>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="brown" id="checkBrown">
+                                <label class="form-check-label" for="checkBrown">Brown</label>
+                                <div class="form-group row">
+                                    <label for="qtyBrown"
+                                        class="col-3 col-form-label col-form-label-sm text-muted">Quantity:</label>
+                                    <div class="col-4">
+                                        <input type="number" class="form-control form-control-sm qty-input"
+                                            id="qtyBrown" min="1" disabled>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="form-check my-2">
-                                <input class="form-check-input" type="checkbox" value="" id="checkPink">
+                        <div class="col-sm">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="pink" id="checkPink">
                                 <label class="form-check-label" for="checkPink">Pink</label>
-                                <input type="number" id="checkPinkQty"><br>
+                                <div class="form-group row">
+                                    <label for="qtyPink"
+                                        class="col-3 col-form-label col-form-label-sm text-muted">Quantity:</label>
+                                    <div class="col-4">
+                                        <input type="number" class="form-control form-control-sm qty-input" id="qtyPink"
+                                            min="1" disabled>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="form-check my-2">
-                                <input class="form-check-input" type="checkbox" value="" id="checkBrown">
-                                <label class="form-check-label" for="checkBrown">Brown</label>
-                                <input type="number" id="checkBrownQty"><br>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="red" id="checkRed">
+                                <label class="form-check-label" for="checkRed">Red</label>
+                                <div class="form-group row">
+                                    <label for="qtyRed"
+                                        class="col-3 col-form-label col-form-label-sm text-muted">Quantity:</label>
+                                    <div class="col-4">
+                                        <input type="number" class="form-control form-control-sm qty-input" id="qtyRed"
+                                            min="1" disabled>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="form-check my-2">
-                                <input class="form-check-input" type="checkbox" value="" id="checkBlue">
-                                <label class="form-check-label" for="checkBlue">Blue</label>
-                                <input type="number" id="checkBlueQty"><br>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="white" id="checkWhite">
+                                <label class="form-check-label" for="checkWhite">White</label>
+                                <div class="form-group row">
+                                    <label for="qtyWhite"
+                                        class="col-3 col-form-label col-form-label-sm text-muted">Quantity:</label>
+                                    <div class="col-4">
+                                        <input type="number" class="form-control form-control-sm qty-input"
+                                            id="qtyWhite" min="1" disabled>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -125,9 +179,13 @@
             </div>
     </section>
 
+    <div class="container" id="dataTable">
+
+    </div>
+
     <div class="container-fluid px-0">
         <div class="navbar navbar-expand-lg navbar-light bg-light px-0">
-            <div class="container-fluid">
+            <div class="container-fluid px-2">
                 <p class="text-muted pull-left my-0 py-1">&copy; 2021 LLLC&trade; | Terms and Conditions</p>
             </div>
         </div>
