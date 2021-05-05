@@ -15,7 +15,7 @@ const createHTMLList = (index, code, name, colorArray, price, description, image
 const createColorDropdown = (colorArray) => {
     var colorCode = "";
     for (i = 0; i < colorArray.length; i++) {
-       
+
         colorCode = colorCode + `<a class="dropdown-item" href="#">${(colorArray[i].substring(0, 1)).toUpperCase() + colorArray[i].substring(1)}</a>`;
     }
     return colorCode;
@@ -55,8 +55,8 @@ class ProductsController {
         var productHTMLList = [];
 
         //for men
-        productHTMLList.push('<div style="width:100%; text-align: center"><h1 style="font-weight: bold">For Men</h1></div>');
-        productHTMLList.push('<div style="width:100%; text-align: center"><h3>Ready for workplace and recreational events</h3></div>');
+        productHTMLList.push('<div style="width:100%; text-align: center"><h2 class="display-4" style="font-size: 40px;">For Men</h2></div>');
+        productHTMLList.push('<div style="width:100%; text-align: center"><h3 class="display-4 mb-4" style="font-size: 25px;">Ready for the workplace or recreational events</h3></div>');
 
         for (var i = 0; i < this._items.length; i++) {
 
@@ -72,9 +72,9 @@ class ProductsController {
         }
 
         //for Ladies
-        productHTMLList.push('<div style="width:100%; text-align: center"><h1 style="font-weight: bold">For Ladies</h1></div>');
-        productHTMLList.push('<div style="width:100%; text-align: center"><h3>Look chic and stylish for office and gatherings</h3></div>');
-        
+        productHTMLList.push('<div style="width:100%; text-align: center"><h2 class="display-4" style="font-size: 40px;">For Ladies</h2></div>');
+        productHTMLList.push('<div style="width:100%; text-align: center"><h3 class="display-4 mb-4" style="font-size: 25px;">Look chic and stylish for the office or gatherings</h3></div>');
+
         for (var i = 0; i < this._items.length; i++) {
 
             const item = this._items[i];    //this is to assign the individual items to the variable
@@ -89,9 +89,9 @@ class ProductsController {
         }
 
         //for Kids
-        productHTMLList.push('<div style="width:100%; text-align: center"><h1 style="font-weight: bold">For Kids</h1></div>');
-        productHTMLList.push('<div style="width:100%; text-align: center"><h3>Suitable for school or playground activities</h3></div>');
-        
+        productHTMLList.push('<div style="width:100%; text-align: center"><h2 class="display-4" style="font-size: 40px;">For Kids</h2></div>');
+        productHTMLList.push('<div style="width:100%; text-align: center"><h3 class="display-4 mb-4" style="font-size: 25px;">Suitable for school or the playground</h3></div>');
+
         for (var i = 0; i < this._items.length; i++) {
 
             const item = this._items[i];    //this is to assign the individual items to the variable
@@ -104,7 +104,7 @@ class ProductsController {
         for (i = 0; i < 3 - (this._items.length % 3); i++) {
             productHTMLList.push('<div style="width:18rem">\n</div>');
         }
-        
+
         //join all the elements/items in my productHTMLList array into one string, and seperate by a break
         const pHTML = productHTMLList.join('\n');
         document.querySelector('#row').innerHTML = pHTML;
