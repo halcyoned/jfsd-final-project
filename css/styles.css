@@ -62,7 +62,7 @@ body {
 }
 
 #productHeader h1, #aboutHeader h1 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lily Script One', sans-serif;
     font-size: 5.5rem;
     color: white;
 }
@@ -73,6 +73,16 @@ body {
     color: white;
     font-size: 1.5rem;
     line-height: 2.5rem;
+}
+
+.mobFullwidth h1 {
+    font-family: 'Roboto' ,sans-serif;
+    font-weight: 300;
+}
+
+#aboutText h3 {
+    font-family: 'Roboto' ,sans-serif;
+    font-weight: 300;
 }
 
 .text-overlay {
