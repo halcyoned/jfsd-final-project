@@ -141,6 +141,7 @@ function submitForm() {
     if (foundColor && foundCode && foundName && foundDescript) {
         addToList(itemCode, itemName, itemCategory, colorArray, itemPrice, itemDescript, itemImage);
         resetForm();
+        $("#formModal").modal("show");
     }
 }
 
@@ -164,6 +165,11 @@ function listForm() {
     appendData(formList);
 }
 
+
+// function displaySuccessModal() {
+//     document.querySelector("#submitFormButton").setAttribute(data - toggle, "modal");
+//     document.querySelector("#submitFormButton").setAttribute(data - target, "#formModal");
+// }
 
 
 
