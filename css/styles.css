@@ -88,8 +88,7 @@ body {
 .text-overlay {
     position: absolute;
     width: 100%;
-    /* text-align: center; */
-    align-self: center;
+    text-align: center;
     z-index: 2;
 }
 
