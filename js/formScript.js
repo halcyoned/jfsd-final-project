@@ -63,6 +63,7 @@ function submitForm() {
 
     var itemCode = document.querySelector("#item-code").value;
     var itemName = document.querySelector("#item-name").value;
+    var itemCategory = document.querySelector("#item-category").value;
     var itemPrice = document.querySelector("#item-price").value;
     var itemDescript = document.querySelector("#item-description").value;
     var itemImage = "";                                                                 //image??
@@ -138,15 +139,16 @@ function submitForm() {
     }
 
     if (foundColor && foundCode && foundName && foundDescript) {
-        addToList(itemCode, itemName, colorArray, itemPrice, itemDescript, itemImage);
+        addToList(itemCode, itemName, itemCategory, colorArray, itemPrice, itemDescript, itemImage);
         resetForm();
     }
 }
 
-function addToList(itemCode, itemName, colorArray, itemPrice, itemDescript, itemImage) {
+function addToList(itemCode, itemName, itemCategory, colorArray, itemPrice, itemDescript, itemImage) {
     const item = {
         iCode: itemCode,
         iName: itemName,
+        iCategory: itemCategory,
         iColorArray: colorArray,
         iPrice: itemPrice,
         iDescript: itemDescript,
