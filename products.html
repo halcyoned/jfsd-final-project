@@ -8,7 +8,10 @@
     <title>Products</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -38,116 +41,124 @@
                     <a class="nav-link" href="login.html">Login Page</a>
                 </li>
             </ul>
-            <!-- <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
-            </form> -->
         </div>
     </nav>
 
     <div id="productHeader">
         <img src="images/lucija-ros-EBdPKgzcOQE-unsplash.jpg" class="img-responsive">
-        <div id="productHeaderText">
-            <h1>Welcome</h1>
+        <div class="col pl-5">
+            <h1>Our Products</h1>
+            <p>Grab your coffee, sit back, relax and browse
+                our bags</p>
         </div>
     </div>
 
     <div class="container">
 
         <div class="container my-5">
-            <h3 id="productTitle" class="display-1 mb-5">Latest Products</h3>
-            <div class="d-flex justify-content-around flex-wrap">
-
-                <div class="card-deck">
-                    <div class="card" style="width: 18rem;">
-                        <img src="images/bag1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Men's backpack</h5>
-                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-                            <p>$69.50 <span class="badge badge-warning">2 pcs left!</span></p>
-                            <!-- <p class="badge badge-warning">2 pcs left!</p> -->
-                            <!-- <button type="button" class="btn btn-warning">2 pcs left!</button> -->
-
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+            <h2 id="productTitle" class="display-4 mb-5">Latest Offerings</h2>
+            <div class="d-flex justify-content-around flex-wrap" id="row">
+                <!--<div class="card" style="width: 18rem;">
+                    <img src="images/bag1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Men's backpack</h5>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p>$69.50</p>   
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Colour
-                                </button>
+                            </button>
 
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#">Black</a>
-                                    <a class="dropdown-item" href="#">Blue</a>
-                                    <a class="dropdown-item" href="#">Red</a>
-                                </div>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Black</a>
+                                <a class="dropdown-item" href="#">Blue</a>
+                                <a class="dropdown-item" href="#">Red</a>
                             </div>
+                        </div>>
+                    </div>
+                </div>
+                
+                <div class="card" style="width: 18rem;">
+                    <img src="images/bag2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Ladies' backpack</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <p>$35.50</p>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Colour
+                            </button>
 
-
-
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Black</a>
+                                <a class="dropdown-item" href="#">Blue</a>
+                                <a class="dropdown-item" href="#">Red</a>
+                                <a class="dropdown-item" href="#">Peach</a>
+                            </div>
                         </div>
                     </div>
                 </div>
+                
+                <div class="card" style="width: 18rem;">
+                    <img src="images/bag3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Child's backpack</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p>$25.50 <span class="badge badge-success">In Stock</span></p>
 
-                <div class="card-deck">
-                    <div class="card" style="width: 18rem;">
-                        <img src="images/bag2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Ladies' backpack</h5>
-                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-
-                            <p>$35.50 <span class="badge badge-danger">Sold Out</span></p>
-
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Colour
-                                </button>
+                            </button>
 
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#">Black</a>
-                                    <a class="dropdown-item" href="#">Blue</a>
-                                    <a class="dropdown-item" href="#">Red</a>
-                                    <a class="dropdown-item" href="#">Peach</a>
-                                </div>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Black</a>
+                                <a class="dropdown-item" href="#">Blue</a>
+                                <a class="dropdown-item" href="#">Red</a>
+                                <a class="dropdown-item" href="#">Peach</a>
                             </div>
+                        </div>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </div>
 
-
+    <!-- Modal -->
+    <div class="modal fade" id="productModal" tabindex="-1" role="dialog" aria-labelledby="productModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 id="modalName">Cat Tee Black T-Shirt</h5>
+                    <span id="modalCode">00000</span>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center">
+                        <img id="modalImg" src="" width="80%">
+                    </div>
+                    <hr>
+                    <p class="lead" id="modalDescription"></p>
+                    <p id="modalPrice"></p>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Colour
+                        </button>
+                        <div id="colorDropdown" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                         </div>
                     </div>
                 </div>
-
-                <div class="card-deck">
-                    <div class="card" style="width: 18rem;">
-                        <img src="images/bag3.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Child's backpack</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-                            <p>$25.50 <span class="badge badge-success">In Stock</span></p>
-
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Colour
-                                </button>
-
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#">Black</a>
-                                    <a class="dropdown-item" href="#">Blue</a>
-                                    <a class="dropdown-item" href="#">Red</a>
-                                    <a class="dropdown-item" href="#">Peach</a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
+                <div class="modal-footer">
+                    <a class="btn btn-primary" data-dismiss="modal">Close</a>
                 </div>
             </div>
         </div>
-
     </div>
 
     <!--footer-->
-    <div class="container-fluid mt-5 px-0">
+    <div class="container-fluid px-0">
         <div class="navbar navbar-expand-lg navbar-light bg-light px-0">
-            <div class="container-fluid">
+            <div class="container-fluid px-2">
                 <p class="text-muted pull-left my-0 py-1">&copy; 2021 LLLC&trade; | Terms and Conditions</p>
             </div>
         </div>
@@ -159,6 +170,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
+
+    <script src="js/productController.js"></script>
+    <script src="js/productListing.js"></script>
 </body>
 
 </html>
