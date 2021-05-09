@@ -2,13 +2,20 @@
 
 const createHTMLList = (index, code, name, colorArray, price, description, image, category) =>
     `<div class="card mb-5" style="width:18rem">
-        <img src="${image}" class="card-img-top" alt="...">
-        <div class="card-body text-center">
-            <h5 class="card-title">${name}</h5>
-            <p class="card-text"></p>
-            <p>${price}</p>
-            <a id="${index}" href="#" class="btn btn-primary" data-toggle="modal" data-target="#productModal">More</a>
-                      
+        <div class="flip-box">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <img src="${image}" class="card-img-top" alt="...">
+                </div>
+                <div class="flip-box-back">
+                    <div class="card-body">
+                        <h5 class="card-title">${name}</h5>
+                        <p class="card-text"></p>
+                        <p>${price}</p>
+                        <a id="${index}" href="#" class="btn btn-primary" data-toggle="modal" data-target="#productModal">More</a>
+                    </div>
+                </div>
+            </div>          
         </div>
     </div>`;
 
