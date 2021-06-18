@@ -24,7 +24,37 @@
 
 <body>
 
-    <div th:insert="fragments/navbar.html :: navbar"></div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <h1 id="logo" class="my-0 mr-3">LLLC</h1>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="about.html">About Us<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="products.html">Product List</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="item_form.html">Add Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+            </ul>
+            <!-- <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+            </form> -->
+        </div>
+    </nav>
 
     <div id="aboutHeader">
         <img src="images/natalie-pedigo-wJK9eTiEZHY-unsplash.jpg" class="img-responsive">
@@ -263,7 +293,13 @@
         </div>
     </div>
 
-    <div th:insert="fragments/footer.html :: footer"></div>
+    <div class="container-fluid px-0">
+        <div class="navbar navbar-expand-lg navbar-light bg-light px-0">
+            <div class="container-fluid px-2">
+                <p class="text-muted pull-left my-0 py-1">&copy; 2021 LLLC&trade; | Terms and Conditions</p>
+            </div>
+        </div>
+    </div>
 
 
     <script src=" https://code.jquery.com/jquery-3.5.1.slim.min.js"
